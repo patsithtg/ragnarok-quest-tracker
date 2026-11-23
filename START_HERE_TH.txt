@@ -1,0 +1,15 @@
+Ragnarok Quest Tracker — พร้อมอัปโหลด GitHub Pages
+
+1. เข้า https://github.com/patsithtg/ragnarok-quest-tracker
+2. คลิก uploading an existing file หรือ Add file > Upload files
+3. แตก ZIP นี้บนคอมพิวเตอร์ แล้วอัปโหลดไฟล์ภายในทั้ง 6 ไฟล์ (อย่าอัปโหลด ZIP ทั้งก้อน)
+4. กด Commit changes
+5. Settings > Pages > Build and deployment: Deploy from a branch > main / (root) > Save
+6. รอ GitHub Pages เผยแพร่ แล้วเปิด https://patsithtg.github.io/ragnarok-quest-tracker/
+7. Firebase Authentication > Users > Add user เพื่อสร้างอีเมล/รหัสผ่านสำหรับเข้าเว็บ (อย่าส่งรหัสผ่านในแชต)
+8. Authentication > Settings > Authorized domains: หากจำเป็น เพิ่ม patsithtg.github.io
+9. เข้าสู่ระบบบนทั้งคอมและ iPad ด้วยบัญชีเดียวกัน
+
+Firestore Rules ที่คุณเผยแพร่แล้วอนุญาต /users/{uid}/... ซึ่งครอบคลุม /users/{uid}/trackers/main ที่เว็บนี้ใช้
+อย่ากด Start collection ด้วยตัวเอง เว็บจะสร้างเอกสารเมื่อเข้าสู่ระบบครั้งแรก
+ข้อควรระวัง: เว็บจะใช้ข้อมูลบนคลาวด์เป็นหลักหลังล็อกอิน; ถ้ามีข้อมูลเดิมสำคัญ ให้สำรอง JSON ก่อน
